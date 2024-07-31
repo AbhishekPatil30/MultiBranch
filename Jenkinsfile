@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Checkout') {
 			steps {
-				echo 'Checkout completed in feature2'
+				echo 'Checkout completed in feature2 '
 			}
 		}
 		stage('Static-test') {

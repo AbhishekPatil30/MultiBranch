@@ -13,7 +13,7 @@ pipeline {
 		}
 		stage('Build') {
 			steps {
-				sh 'echo "Building the code in feature1"'
+				sh 'echo "Building the code in feature1 "'
 			}
 		}
 		stage('Deploy') {

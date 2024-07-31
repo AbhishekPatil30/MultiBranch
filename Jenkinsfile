@@ -3,25 +3,25 @@ pipeline {
 	stages {
 		stage('Checkout') {
 			steps {
-				echo 'Checkout completed'
+				echo 'Checkout completed in feature2'
 			}
 		}
 		stage('Static-test') {
 			steps {
-				echo 'Running static tests on code'
+				echo 'Running static tests on code in feature2'
 			}
 		}
 		stage('Build') {
 			steps {
-				sh 'echo "Building the code"'
+				sh 'echo "Building the code in feature2"'
 			}
 		}
 		stage('Deploy') {
 		    when {
-                branch 'prod'
+                branch 'feature2'
             }
 			steps {
-				echo 'Deploying into environment'
+				echo 'Deploying into environment in feature2'
 			}
 		}
 	}
